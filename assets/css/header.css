@@ -27,6 +27,7 @@
     border: 1.65434px solid var(--Grey-1);
     border-radius: 33.0868px;
     box-sizing: border-box;
+    transition: outline 0.05s;
 }
 .header__button{
     width: 44.11575698852539px;
@@ -35,11 +36,20 @@
     margin-left: -50px;
     background: #FFE9EE;
     border-radius: 100%;
-    background-image: url("imgs/lupa.png");
+    background-image: url("../img/LupaVermelha.png");
+    background-size: 12px;
     background-position: center; 
     background-repeat: no-repeat; 
     border: none;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
 }
 .header__input:hover{
+    cursor: pointer;
     outline: 2px solid black;
+}
+.header__button:hover {
+    cursor: pointer;
+    background-color: var(--Color-primary);
+    background-image: url("../img/LupaBranca.png");
 }
