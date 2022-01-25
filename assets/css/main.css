@@ -1,8 +1,8 @@
 .nav-filter{
     margin-top: 16.48px;
-    margin-left: 18px;
     overflow-x: auto;
     display: flex;
+    padding-bottom: 13px;
 }
 .nav-filter__button{
     margin-right: 22px;
@@ -16,6 +16,7 @@
     border: 1.5px solid var(--Product-2);
     border-radius: 30px;
     box-sizing: border-box;
+    border: 1.5px solid transparent;
 }
 .nav-filter__button:hover{
     border: 1.5px solid var(--Grey-4);
@@ -48,6 +49,11 @@
     background-size: 19px;
     background-position-y: center;
     background-position-x: 15px;
+}
+
+/* Shopcart */
+.shopcart {
+    margin-top: 27px;
 }
 .shopcart__header {
     display: flex;
@@ -105,12 +111,12 @@
 
 /* Showcase */
 .showcase {
+    margin-top: 14px;
     display: flex;
     overflow-x: auto;
     width: 100%;
     gap: 23px
 }
-
 /* Showcase Cards */
 .showcase-card {
     width: 300px;
