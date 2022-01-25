@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    /* Primary Palette */
+    --Color-primary: #f31c4a;
+    --Color-primary-50: #FFE9EE;
+    --Color-Secondary: #4ACA94;
+    --Color-Secondary-50: #E4F7EF;
+    /* Product Palette */
+    --Product-1: #EEF6FF;
+    --Product-2: #FFF7F4;
+    --Product-3: #FFE4EA;
+    --Product-4: #F3EEF5;
+    /* Grey Scale Palette */
+    --Grey-4: #212529;
+    --Grey-3: #868E96;
+    --Grey-2: #E9ECEF;
+    --Grey-1: #F8F9FA;
+    /* Fonts */
+    --Fonts-poppins:'Poppins', sans-serif;
+}
+
+.header__logo{
+    width: 123px;
+    height: 46px;
+    margin-top: 21px;
+    margin-left: 17px;
+}
+.header.img{
+    width: 100%;
+}
+.header__search-bar{
+    width: 343px;
+    height: 54px;
+    margin-top: 15.48px;
+    margin-left: 17px;
+    display: flex;
+}
+.header__input{
+    width: 100%;
+    padding: 18.75px 60.35px 17.29px 17.65px;
+    background: var(--Grey-1);
+    color: var(--Grey-3);
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14.7053px;
+    line-height: 18px;
+    border: 1.65434px solid var(--Grey-1);
+    border-radius: 33.0868px;
+    box-sizing: border-box;
+}
+.header__button{
+    width: 44.11575698852539px;
+    height: 44.11575698852539px;
+    margin-top: 5px;
+    margin-left: -50px;
+    background: #FFE9EE;
+    border-radius: 100%;
+    background-image: url("imgs/lupa.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border: none;
+}
