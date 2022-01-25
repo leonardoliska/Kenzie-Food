@@ -16,7 +16,9 @@
 }
 
 .shopcart__image_cart {
-    margin: 20px
+    margin: 20px;
+    width: 15.09px;
+    height: 15.09px;
 }
 
 .shopcart__empty-box {
@@ -139,3 +141,96 @@
         cursor: pointer;
     }
 
+.shopcart-card{
+    display: flex;
+    position: relative;
+    height: 75px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 10px
+
+}
+
+.shopcart-card__figure{
+    height: 75px;
+    width: 75px;
+}
+
+.shopcart-card__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8.625px;
+    margin-left: 10.78px;
+}
+
+.shopcart-card__title{
+    font-family: var(--Fonts-poppins);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 6px;
+    margin-right: 25px;
+    padding-bottom: 5px;
+}
+
+.shopcart-card__tag{
+    font-family: var(--Fonts-poppins);
+    font-weight: 400;
+    font-size: 10px;
+    color:var(--Grey-3);
+    line-height: 16px;
+}
+
+.shopcart-card__price{
+    font-family: var(--Fonts-poppins);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.shopcart-card__button{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    background-image: url("../img/trash.png");
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:var(--Grey-1);
+    border:none;
+    border-radius: 5px;
+    width: 27px;
+    height: 27px;
+}
+
+.shopcart-card__button :hover {
+    cursor: pointer;
+}
+
+.shopcart-card_bottom{
+    display: flex;
+    background-color:var(--Grey-1);
+    width: 100%;
+    height: 62.53px;
+}
+
+.shopcart__card_title_amount{
+    font-family: var(--Fonts-poppins);
+    font-weight: 700;
+    font-size: 12.94px;
+    line-height: 14.38px;
+    display: flex;
+    align-items: center;
+    margin-left: 19.5px;
+    margin-right: 192px;
+}
+
+.shopcart-card_amount{
+    display: flex;
+    align-items: center;
+    font-family: var(--Fonts-poppins);
+    font-weight: 700;
+    font-size: 12.94px;
+    line-height: 14.38px;
+}
