@@ -324,7 +324,7 @@
 }
 
 
-@media only screen and (min-width: 643px) {
+@media only screen and (min-width: 663px) {
     .header {
         width: 643px;
         margin: auto;
@@ -332,6 +332,9 @@
     .main {
         width: 643px;
         margin: auto;
+    }
+    .nav-filter {
+        padding-left: 0;
     }
     .showcase {
         overflow-x: visible;
