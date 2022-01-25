@@ -40,3 +40,9 @@
     background-repeat: no-repeat; 
     border: none;
 }
+.header__input:hover{
+    background: var(--color-primary-20);
+    background-image: url('imgs/lupa\ pesquisando.png');
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
