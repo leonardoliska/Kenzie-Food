@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    /* Primary Palette */
+    --Color-primary: #f31c4a;
+    --Color-primary-50: #FFE9EE;
+    --Color-Secondary: #4ACA94;
+    --Color-Secondary-50: #E4F7EF;
+    /* Product Palette */
+    --Product-1: #EEF6FF;
+    --Product-2: #FFF7F4;
+    --Product-3: #FFE4EA;
+    --Product-4: #F3EEF5;
+    /* Grey Scale Palette */
+    --Grey-4: #212529;
+    --Grey-3: #868E96;
+    --Grey-2: #E9ECEF;
+    --Grey-1: #F8F9FA;
+    /* Fonts */
+    --Fonts-poppins:'Poppins', sans-serif;
+}
