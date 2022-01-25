@@ -344,7 +344,7 @@
         padding: 0;
     }
 }
-@media only screen and (min-width: 1055px) {
+@media only screen and (min-width: 1075px) {
     .nav-filter {
         width: 100%;
     }
@@ -369,7 +369,7 @@
         width: 1055px;
     }
 }
-@media only screen and (min-width: 1398px) {
+@media only screen and (min-width: 1418px) {
     .main {
         width: 1398px;
     }
