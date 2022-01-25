@@ -9,6 +9,7 @@
 }
 .header__search-bar{
     width: 100%;
+    max-width: 500px;
     height: 54px;
     margin-top: 15.48px;
     display: flex;
