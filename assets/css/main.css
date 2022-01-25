@@ -1,3 +1,60 @@
+.nav-filter{
+    margin-top: 16.48px;
+    overflow-x: auto;
+    display: flex;
+    padding-bottom: 13px;
+}
+.nav-filter__button{
+    margin-right: 22px;
+    padding: 11.5px 15px 11.5px 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid var(--Product-2);
+    border-radius: 30px;
+    box-sizing: border-box;
+    border: 1.5px solid transparent;
+}
+.nav-filter__button:hover{
+    border: 1.5px solid var(--Grey-4);
+    cursor: pointer;
+}
+.nav-filter__button--grey-1{
+    background: var(--Grey-1);
+    padding: 11.5px 15px;
+}
+.nav-filter__button--product-2{
+    background: var(--Product-2);
+    background-image: url('/assets/img/Icon_bread.png');
+    background-repeat: no-repeat;
+    background-size: 19px;
+    background-position-y: center;
+    background-position-x: 15px;
+}
+.nav-filter__button--product-3{
+    background: var(--Product-3);
+    background-image: url('/assets/img/Icon_glass\ of\ wine.png');
+    background-repeat: no-repeat;
+    background-size: 19px;
+    background-position-y: center;
+    background-position-x: 15px;
+}
+.nav-filter__button--product-4{
+    background: var(--Product-4);
+    background-image: url('/assets/img/Icon_fruits.png');
+    background-repeat: no-repeat;
+    background-size: 19px;
+    background-position-y: center;
+    background-position-x: 15px;
+}
+
+/* Shopcart */
+.shopcart {
+    margin-top: 27px;
+}
 .shopcart__header {
     display: flex;
     width: 100%;
@@ -51,16 +108,17 @@
     height: 47.2px;
     margin-bottom: 24px;
 
+
 }
 
 /* Showcase */
 .showcase {
+    margin-top: 14px;
     display: flex;
     overflow-x: auto;
     width: 100%;
     gap: 23px
 }
-
 /* Showcase Cards */
 .showcase-card {
     width: 300px;
