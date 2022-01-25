@@ -323,6 +323,33 @@
     padding-top: 15px
 }
 
+.shopcart__sum-text{
+    font-family: var(--Fonts-poppins);
+    font-weight: 700;
+    font-size: 12.94px;
+    line-height: 14.38px;
+    display: flex;
+    align-items: center;
+    margin-left: 19.5px;
+}
+
+.shopcart__sum-number{
+    display: flex;
+    align-items: center;
+    font-family: var(--Fonts-poppins);
+    font-weight: 700;
+    font-size: 12.94px;
+    line-height: 14.38px;
+    margin-right: 20px;
+}
+
+.shopcart__bottom-sum{
+    display: flex;
+    background-color:#ffff;
+    width: 100%;
+    height: 62.53px;
+    justify-content: space-between;
+}
 
 @media only screen and (min-width: 643px) {
     .header {
