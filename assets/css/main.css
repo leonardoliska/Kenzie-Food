@@ -35,7 +35,7 @@
     padding: 6px 18px 6px 42px;
     border-radius: 30px;
     background-color: var(--Color-primary-50);
-    background-image: url('/assets/Imgs/Icon_bread.png');
+    background-image: url('/assets/img/Icon_bread.png');
     background-position-y: center;
     background-position-x: 18px;
     background-repeat: no-repeat;
@@ -74,14 +74,14 @@
     position: absolute;
     bottom: 0;
     right:5px;
-    background-image: url('/assets/Imgs/Logo_Cart_Comprar.png');
+    background-image: url('/assets/img/Logo_Cart_Comprar.png');
     background-position-x: 8px;
     background-position-y: 9px;
     background-repeat: no-repeat;
     background-size: 50%;
 }
     .showcase-card__button:hover {
-        background-image: url('/assets/Imgs/Logo_Cart_Comprar_White.png');
+        background-image: url('/assets/img/Logo_Cart_Comprar_White.png');
         background-color: var(--Color-Secondary);
         cursor: pointer;
     }
