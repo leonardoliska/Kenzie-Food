@@ -359,9 +359,6 @@
     .nav-filter {
         padding-left: 0;
     }
-    .header {
-        padding-left: 0;
-    }
     .shopcart {
         width: 100%;
     }
@@ -382,7 +379,14 @@
     }
 }
 @media only screen and (min-width: 1091px) {
-
+    .header {
+        display: flex;
+        padding: 0 18px;
+        justify-content: space-between;
+    }
+    .header__search-bar{
+        max-width: 320px;
+    }
     .shopcart {
         margin: -54px 0 0 73px;
         padding: 0;
