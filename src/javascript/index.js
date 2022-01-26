@@ -8,7 +8,7 @@ const shopcart = new ShopCart()
 shopcart.updateCart()
 
 const showcase = new ShowCase(productsList)
-showcase.addCardsFromListToHtml()
+showcase.addCardsFromListToHtml(productsList)
 
 const showcaseHtml = document.querySelector('.showcase')
 
@@ -22,3 +22,20 @@ showcaseHtml.addEventListener("click", (evt) => {
     }
 })
 
+const navFilter = document.querySelector('.nav-filter')
+
+navFilter.addEventListener("click", (evt) => {
+    const navButton =evt.target
+    if(navButton.tagName === 'BUTTON'){
+        const buttonName = navButton.value
+        showcase.filterByTag(buttonName)
+    }
+})
+
+const inputButton = document.querySelector('.header__button')
+
+inputButton.addEventListener('click', (evt) => {
+    const inputSearch = document.querySelector(".header__input")
+    const inputValue = inputSearch.value.toLowerCase()
+    showcase.filterBySearch(inputValue)
+})
