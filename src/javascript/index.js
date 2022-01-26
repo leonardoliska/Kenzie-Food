@@ -39,3 +39,5 @@ inputButton.addEventListener('click', (evt) => {
     const inputValue = inputSearch.value.toLowerCase()
     showcase.filterBySearch(inputValue)
 })
+
+console.log(await Api.getOne(107))

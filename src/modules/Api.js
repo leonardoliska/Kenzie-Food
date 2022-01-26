@@ -12,4 +12,13 @@ class Api {
         then(res => res.json())
         return data
     }
+
+    static async getOne(id) {
+        const data = fetch(`${this.endpoint}/my/product/${id}`, {
+            headers : {
+                Authorization: 'Bearer ' + this.token
+            }}).
+        then(res => res.json())
+        return data
+    }
 }
