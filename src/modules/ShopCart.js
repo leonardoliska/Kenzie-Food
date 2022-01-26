@@ -1,9 +1,9 @@
 export { ShopCart }
 
 class ShopCart {
-    constructor(productsList) {
-        this.list           = productsList
-        this.cartHtml           = document.querySelector('.shopcart-cards-box')
+    constructor() {
+        this.list           = []
+        this.cartHtml       = document.querySelector('.shopcart-cards-box')
         this.quantityHtml   = document.querySelector('.shopcart__quantity-number')
         this.totalHtml      = document.querySelector('.shopcart__total-number')
         this.emptyBox       = document.querySelector('.shopcart__empty-box')
@@ -52,7 +52,6 @@ class ShopCart {
     
     addCardsFromListToHtml() {
         this.list.forEach((card, index) => {
-            console.log(card)
             const createdCard = this.createNewCard(card, index)
             this.cartHtml.appendChild(createdCard)
         })

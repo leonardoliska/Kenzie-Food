@@ -4,7 +4,7 @@ import { Api } from "../modules/Api.js"
 
 const productsList = await Api.getAll()
 
-const shopcart = new ShopCart(productsList)
+const shopcart = new ShopCart()
 shopcart.updateCart()
 
 const showcase = new ShowCase(productsList)
@@ -17,7 +17,6 @@ showcaseHtml.addEventListener("click", (evt) => {
     if(buyButton.tagName === 'BUTTON'){
         const idProduct = buyButton.getAttribute('data-id') 
         const product = showcase.getProduct(idProduct)
-        console.log(product)
         shopcart.list.push(product)
         shopcart.updateCart()
     }
