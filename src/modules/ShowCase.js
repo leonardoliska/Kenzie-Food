@@ -50,8 +50,9 @@ class ShowCase {
         return card
     }
 
-    addCardsFromListToHtml() {
-        this.list.forEach((card) => {
+    addCardsFromListToHtml(list) {
+        this.html.innerHTML = ""
+        list.forEach((card) => {
             const createdCard = this.createNewCard(card)
             this.html.appendChild(createdCard)
         })
@@ -63,6 +64,26 @@ class ShowCase {
         })
         return findProduct
     }
+
+    filterByTag(tagName) {
+        if (tagName == 'Todos') {
+            this.addCardsFromListToHtml(this.list)
+        } else {
+            const filterList = this.list.filter((produto) => {
+                console.log(produto.categoria)
+                console.log(tagName)
+                return produto.categoria == tagName
+            })
+            this.addCardsFromListToHtml(filterList)
+        }
+    }
+
+    filterBySearch(searchValue) {
+        const filteredList = this.list.filter(product => {
+            return product.nome.toLowerCase().includes(searchValue) || product.categoria.toLowerCase().includes(searchValue)})
+        this.addCardsFromListToHtml(filteredList)
+    }
+
 
 }
 
