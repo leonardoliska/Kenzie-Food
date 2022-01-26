@@ -52,10 +52,12 @@ class ShopCart {
     
     addCardsFromListToHtml() {
         this.list.forEach((card, index) => {
+            console.log(card)
             const createdCard = this.createNewCard(card, index)
             this.cartHtml.appendChild(createdCard)
         })
     }
+    
 
     updateCart() {
         this.cartHtml.innerHTML = ''
