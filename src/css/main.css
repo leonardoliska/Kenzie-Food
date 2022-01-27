@@ -158,12 +158,20 @@
     padding: 6px 18px 6px 42px;
     border-radius: 30px;
     background-color: var(--Color-primary-50);
-    background-image: url('../img/Icon_bread.png');
     background-position-y: center;
     background-position-x: 18px;
     background-repeat: no-repeat;
     background-size: 15px;
     color: var(--Grey-4);
+}
+.showcase-card__tag--fruit {
+    background-image: url('../img/Icon_fruits.png');
+}
+.showcase-card__tag--bread {
+    background-image: url('../img/Icon_bread.png');
+}
+.showcase-card__tag--drink {
+    background-image:  url('../img/Icon_glass\ of\ wine.png');
 }
 .showcase-card__title {  
     font-family: var(--Fonts-poppins);
