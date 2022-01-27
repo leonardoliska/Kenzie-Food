@@ -5,7 +5,7 @@ class Api {
     static token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjAsImlhdCI6MTY0MzExNzk3NiwiZXhwIjoxNjQzOTgxOTc2LCJzdWIiOiJbb2JqZWN0IFVuZGVmaW5lZF0ifQ.NP0ts9w-7_qN6cVH0I1PeaHY4fuZHLkhGREcKiDkbbY'
 
     static async getAll() {
-        const data = fetch(`${this.endpoint}/my/product`, {
+        const data = await fetch(`${this.endpoint}/my/product`, {
             headers : {
                 Authorization: 'Bearer ' + this.token
             }}).
@@ -14,7 +14,7 @@ class Api {
     }
 
     static async getOne(id) {
-        const data = fetch(`${this.endpoint}/my/product/${id}`, {
+        const data = await fetch(`${this.endpoint}/my/product/${id}`, {
             headers : {
                 Authorization: 'Bearer ' + this.token
             }}).
@@ -23,19 +23,29 @@ class Api {
     }
 
     static async deleteOne(id) {
-        const data = fetch(`${this.endpoint}/my/product/${id}`, {
+        const data = await fetch(`${this.endpoint}/my/product/${id}`, {
             method: 'DELETE',
             headers : {
                 Authorization: 'Bearer ' + this.token,
+            }})
+        return data
+    }
+
+    static async patchOne(newData) {
+        const data = await fetch(`${this.endpoint}/my/product/${newData.id}`, {
+            method: 'PATCH',
+            body:JSON.stringify(newData),
+            headers : {
+                Authorization: 'Bearer ' + this.token,
+                "Content-Type": "application/json"
             }}).
         then(res => res.json())
         return data
     }
 
-    static async patchOne(id, newData) {
-        console.log(newData)
-        const data = fetch(`${this.endpoint}/my/product/${id}`, {
-            method: 'PATCH',
+    static async postOne(newData) {
+        const data = await fetch(`${this.endpoint}/my/product`, {
+            method: 'POST',
             body:JSON.stringify(newData),
             headers : {
                 Authorization: 'Bearer ' + this.token,
