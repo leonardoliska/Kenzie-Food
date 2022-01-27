@@ -21,4 +21,27 @@ class Api {
         then(res => res.json())
         return data
     }
+
+    static async deleteOne(id) {
+        const data = fetch(`${this.endpoint}/my/product/${id}`, {
+            method: 'DELETE',
+            headers : {
+                Authorization: 'Bearer ' + this.token,
+            }}).
+        then(res => res.json())
+        return data
+    }
+
+    static async patchOne(id, newData) {
+        console.log(newData)
+        const data = fetch(`${this.endpoint}/my/product/${id}`, {
+            method: 'PATCH',
+            body:JSON.stringify(newData),
+            headers : {
+                Authorization: 'Bearer ' + this.token,
+                "Content-Type": "application/json"
+            }}).
+        then(res => res.json())
+        return data
+    }
 }
