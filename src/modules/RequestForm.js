@@ -98,22 +98,57 @@ class RequestForm {
                 }
             }
         })
+        this.subForm.innerHTML = 'Selecione uma ação'
         return data
     }
     async sendRequest(requestType, data) {
         switch (requestType) {
             case 'post': {
-                const res = Api.postOne(data)
+                const res = await Api.postOne(data)
                 return res
             }
             case 'patch': {
-                const res = Api.patchOne(data)
+                const res = await Api.patchOne(data)
                 return res
             }
             case 'delete': {
-                const res = Api.deleteOne(data.id)
+                const res = await Api.deleteOne(data.id)
                 return res
             }
         }
+    }
+    showSuccessPopUp() {
+        const container = document.createElement('div')
+        const text = document.createElement('p')
+
+        text.innerText = 'Sucesso na requisição'
+
+        container.classList.add('success')
+        text.classList.add('success__text')
+
+        container.appendChild(text)
+
+        document.querySelector('body').appendChild(container)
+
+        setTimeout(() => {
+            container.remove()
+        }, 5000)
+    }
+    showFailPopUp() {
+        const container = document.createElement('div')
+        const text = document.createElement('p')
+
+        text.innerText = 'Falha na requisição'
+
+        container.classList.add('success')
+        text.classList.add('success__text')
+
+        container.appendChild(text)
+
+        document.querySelector('body').appendChild(container)
+
+        setTimeout(() => {
+            container.remove()
+        }, 5000)
     }
 }

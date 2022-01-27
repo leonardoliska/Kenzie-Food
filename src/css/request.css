@@ -73,3 +73,30 @@
 .form__submit:hover {
     cursor: pointer;
 }
+
+.success {
+    padding: 20px 30px;
+    background-color: #BFB;
+    width: 30%;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    text-align: center;
+}
+.fail {
+    padding: 20px 30px;
+    background-color: #FBB;
+    width: 30%;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.success__text .fail__text{
+    font-size: 18px;
+}
