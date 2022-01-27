@@ -29,7 +29,7 @@
 }
 .nav-filter__button--product-2{
     background: var(--Product-2);
-    background-image: url('/assets/img/Icon_bread.png');
+    background-image: url('../img/Icon_bread.png');
     background-repeat: no-repeat;
     background-size: 19px;
     background-position-y: center;
@@ -37,7 +37,7 @@
 }
 .nav-filter__button--product-3{
     background: var(--Product-3);
-    background-image: url('/assets/img/Icon_glass\ of\ wine.png');
+    background-image: url('../img/Icon_fruits.png');
     background-repeat: no-repeat;
     background-size: 19px;
     background-position-y: center;
@@ -45,7 +45,7 @@
 }
 .nav-filter__button--product-4{
     background: var(--Product-4);
-    background-image: url('/assets/img/Icon_fruits.png');
+    background-image: url('../img/Icon_glass\ of\ wine.png');
     background-repeat: no-repeat;
     background-size: 19px;
     background-position-y: center;
@@ -158,12 +158,20 @@
     padding: 6px 18px 6px 42px;
     border-radius: 30px;
     background-color: var(--Color-primary-50);
-    background-image: url('/assets/img/Icon_bread.png');
     background-position-y: center;
     background-position-x: 18px;
     background-repeat: no-repeat;
     background-size: 15px;
     color: var(--Grey-4);
+}
+.showcase-card__tag--fruit {
+    background-image: url('../img/Icon_fruits.png');
+}
+.showcase-card__tag--bread {
+    background-image: url('../img/Icon_bread.png');
+}
+.showcase-card__tag--drink {
+    background-image:  url('../img/Icon_glass\ of\ wine.png');
 }
 .showcase-card__title {  
     font-family: var(--Fonts-poppins);
@@ -197,7 +205,7 @@
     position: absolute;
     bottom: 0;
     right:5px;
-    background-image: url('/assets/img/Logo_Cart_Comprar.png');
+    background-image: url('../img/Logo_Cart_Comprar.png');
     background-position-x: 8px;
     background-position-y: 9px;
     background-repeat: no-repeat;
@@ -205,7 +213,7 @@
     transition: background-color 0.2s;
 }
     .showcase-card__button:hover {
-        background-image: url('/assets/img/Logo_Cart_Comprar_White.png');
+        background-image: url('../img/Logo_Cart_Comprar_White.png');
         background-color: var(--Color-Secondary);
         cursor: pointer;
     }

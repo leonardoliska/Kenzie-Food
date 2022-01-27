@@ -17,7 +17,6 @@ class ShowCase {
         const price = document.createElement('h3')
         const button = document.createElement('button')
 
-
         card.classList.add('showcase-card')
         figure.classList.add('showcase-card__figure')
         image.classList.add('showcase-card__image')
@@ -27,6 +26,21 @@ class ShowCase {
         description.classList.add('showcase-card__description')
         price.classList.add('showcase-card__price')
         button.classList.add('showcase-card__button')
+
+        switch (categoria) {
+            case 'Frutas': {
+                tag.classList.add('showcase-card__tag--fruit')
+                break
+            }
+            case 'Panificadora': {
+                tag.classList.add('showcase-card__tag--bread')
+                break
+            }
+            case 'Bebidas': {
+                tag.classList.add('showcase-card__tag--drink')
+                break
+            } 
+        }
 
         button.setAttribute('data-id', id)
 
