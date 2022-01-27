@@ -10,7 +10,7 @@ class RequestForm {
         this.subFormOption      = document.querySelector('.sub-form__select')
         this.formSubmit         = document.querySelector('.form__submit')
     }
-    createTextInputs() {
+    createTextInputs(required=false) {
         const name              = document.createElement('input')
         const price             = document.createElement('input')
         const category          = document.createElement('input')
@@ -34,6 +34,14 @@ class RequestForm {
         category.classList.add('sub-form__input')
         image.classList.add('sub-form__input')
         description.classList.add('sub-form__input')
+
+        if (required) {
+            name.required           = required
+            price.required          = required
+            category.required       = required
+            image.required          = required
+            description.required    = required
+        }
 
         this.subForm.appendChild(name)
         this.subForm.appendChild(price)
@@ -63,7 +71,8 @@ class RequestForm {
         this.subForm.innerHTML = ''
         switch (formType) {
             case 'post': {
-                this.createTextInputs()
+                const required = true
+                this.createTextInputs(required)
                 break
             }
             case 'patch': {
@@ -89,7 +98,6 @@ class RequestForm {
                 }
             }
         })
-        console.log(data)
         return data
     }
     async sendRequest(requestType, data) {
