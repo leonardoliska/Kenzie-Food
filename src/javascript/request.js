@@ -24,6 +24,11 @@ form.addEventListener('submit', async (evt) => {
     
     const formData = requestForm.getDataFromInputs(inputs)
 
-    const response = await requestForm.sendRequest(requestType, formData)
+    try {
+        const response = await requestForm.sendRequest(requestType, formData)
+        requestForm.showSuccessPopUp()
+    } catch(err) {
+        requestForm.showFailPopUp()
+    }
 
 })

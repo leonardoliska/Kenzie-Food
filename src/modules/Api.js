@@ -23,35 +23,35 @@ class Api {
     }
 
     static async deleteOne(id) {
-        const data = await fetch(`${this.endpoint}/my/product/${id}`, {
+        const res = await fetch(`${this.endpoint}/my/product/${id}`, {
             method: 'DELETE',
             headers : {
                 Authorization: 'Bearer ' + this.token,
             }})
-        return data
+        return res
     }
 
     static async patchOne(newData) {
-        const data = await fetch(`${this.endpoint}/my/product/${newData.id}`, {
+        const status = await fetch(`${this.endpoint}/my/product/${newData.id}`, {
             method: 'PATCH',
             body:JSON.stringify(newData),
             headers : {
                 Authorization: 'Bearer ' + this.token,
                 "Content-Type": "application/json"
             }}).
-        then(res => res.json())
-        return data
+        then(res => res.status)
+        return status
     }
 
     static async postOne(newData) {
-        const data = await fetch(`${this.endpoint}/my/product`, {
+        const status = await fetch(`${this.endpoint}/my/product`, {
             method: 'POST',
             body:JSON.stringify(newData),
             headers : {
                 Authorization: 'Bearer ' + this.token,
                 "Content-Type": "application/json"
             }}).
-        then(res => res.json())
-        return data
+        then(res => res.status)
+        return status
     }
 }

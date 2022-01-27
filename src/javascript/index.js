@@ -32,9 +32,9 @@ navFilter.addEventListener("click", (evt) => {
     }
 })
 
-const inputButton = document.querySelector('.header__button')
+const headerInput = document.querySelector('.header__input')
 
-inputButton.addEventListener('click', (evt) => {
+headerInput.addEventListener('keydown', (evt) => {
     const inputSearch = document.querySelector(".header__input")
     const inputValue = inputSearch.value.toLowerCase()
     showcase.filterBySearch(inputValue)
