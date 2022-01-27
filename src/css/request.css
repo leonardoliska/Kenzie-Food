@@ -1,0 +1,127 @@
+.main {
+    margin: auto;
+    width: clamp(300px, 80%, 500px);
+}
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 25px;
+    background-color: var(--Grey-2);
+    border-radius: 8px;
+}
+.form__label {
+    width: min-content;
+    white-space: nowrap;
+    padding: 7px 12px;
+}
+.form__select {
+    width: min-content;
+    padding: 7px 12px;
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--Grey-1);
+}
+.form__submit {
+    padding: 8px 20px;
+    border: 0;
+    border-radius: 5px;
+    margin-left: auto;
+    background-color: #FFF;
+}
+.sub-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #FFF;
+    padding: 15px;
+    margin: 15px 0;
+    width: 100%;
+    border-radius: 8px;
+}
+.sub-form > * {
+    margin: 8px;
+}
+.sub-form__label {
+    padding: 7px 12px;
+}
+.sub-form__select {
+    padding: 7px 12px;
+    border: 0;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--Grey-2);
+}
+.sub-form__input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 7px 12px;
+    border-radius: 5px;
+    border: 0;
+    background-color: var(--Grey-2);
+}
+.form__select:hover,
+.sub-form__select:hover,
+.form__submit:hover {
+    cursor: pointer;
+}
+.header__link__return{
+    display: block;
+    background-color: var(--Grey-2);
+    border-radius: 33px;
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid transparent;
+}
+.header__logo{
+    height: 46px;
+    margin: 0px;
+}
+.header{
+    margin-left: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header__link__return {
+    display: block;
+    background-color: var(--Grey-2);
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 33px;
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid transparent;
+}
+
+.success {
+    padding: 20px 30px;
+    background-color: #BFB;
+    width: 30%;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    text-align: center;
+}
+.fail {
+    padding: 20px 30px;
+    background-color: #FBB;
+    width: 30%;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.success__text .fail__text{
+    font-size: 18px;
+}

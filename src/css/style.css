@@ -20,3 +20,11 @@
     /* Fonts */
     --Fonts-poppins:'Poppins', sans-serif;
 }
+
+* {
+    font-family: var(--Fonts-poppins);
+}
+
+.hidden {
+    display: none !important;
+}

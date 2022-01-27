@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/request.css">
+    <title>Cadastrar Produto</title>
+</head>
+<body>
+    <header class="header">
+        <figure class="header__logo">
+            <img src="src/img/imagem kenziefood.png" alt="" class="header__image">
+        </figure>
+        <nav class="header__nav">
+            <a href="./" class="header__link__return">Voltar</a>
+        </nav>
+    </header>
+    <main class="main">
+        <form class="form">
+            <label for="action" class="form__label">Selecione o tipo de ação:</label>
+            <select id="action" class="form__select">
+                <option value="post">Criar Produto</option>
+                <option value="patch">Alterar Produto</option>
+                <option value="delete">Remover Produto</option>
+            </select>
+
+            <div class="sub-form">
+                Selecione uma ação
+            </div>
+            
+            <input type="submit" value="Enviar" class="form__submit">
+
+            <script type="module" src="/src/javascript/request.js"></script>
+
+        </form>
+    </main>
+</body>
+</html>
