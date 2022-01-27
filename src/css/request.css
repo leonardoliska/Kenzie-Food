@@ -2,7 +2,6 @@
     margin: auto;
     width: clamp(300px, 80%, 500px);
 }
-
 .form {
     display: flex;
     flex-wrap: wrap;
@@ -25,7 +24,6 @@
     text-align: center;
     background-color: var(--Grey-1);
 }
-
 .form__submit {
     padding: 8px 20px;
     border: 0;
@@ -33,7 +31,6 @@
     margin-left: auto;
     background-color: #FFF;
 }
-
 .sub-form {
     display: flex;
     flex-wrap: wrap;
@@ -43,14 +40,13 @@
     margin: 15px 0;
     width: 100%;
     border-radius: 8px;
-
 }
 .sub-form > * {
     margin: 8px;
 }
 .sub-form__label {
     padding: 7px 12px;
-} 
+}
 .sub-form__select {
     padding: 7px 12px;
     border: 0;
@@ -58,7 +54,6 @@
     border-radius: 5px;
     background-color: var(--Grey-2);
 }
-
 .sub-form__input {
     box-sizing: border-box;
     width: 100%;
@@ -67,11 +62,41 @@
     border: 0;
     background-color: var(--Grey-2);
 }
-
-.form__select:hover, 
+.form__select:hover,
 .sub-form__select:hover,
 .form__submit:hover {
     cursor: pointer;
+}
+.header__link__return{
+    display: block;
+    background-color: var(--Grey-2);
+    border-radius: 33px;
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid transparent;
+}
+.header__logo{
+    height: 46px;
+    margin: 0px;
+}
+.header{
+    margin-left: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header__link__return {
+    display: block;
+    background-color: var(--Grey-2);
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 33px;
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid transparent;
 }
 
 .success {
