@@ -12,4 +12,15 @@ class Api {
         then(res => res.json())
         return data
     }
+    static async patchOne(newData) {
+        const data = await fetch(`${this.endpoint}/my/product/${newData.id}`, {
+            body: JSON.stringify(newData),
+            method: 'PATCH',
+            headers : {
+                "Content-Type": "application/json",
+                Authorization: 'Bearer ' + this.token
+            }}).
+        then(res => res.json())
+        return data
+    }
 }
