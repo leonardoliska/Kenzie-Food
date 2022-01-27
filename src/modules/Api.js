@@ -12,13 +12,33 @@ class Api {
         then(res => res.json())
         return data
     }
-    static async patchOne(newData) {
-        const data = await fetch(`${this.endpoint}/my/product/${newData.id}`, {
-            body: JSON.stringify(newData),
-            method: 'PATCH',
+
+    static async getOne(id) {
+        const data = fetch(`${this.endpoint}/my/product/${id}`, {
             headers : {
-                "Content-Type": "application/json",
                 Authorization: 'Bearer ' + this.token
+            }}).
+        then(res => res.json())
+        return data
+    }
+
+    static async deleteOne(id) {
+        const data = fetch(`${this.endpoint}/my/product/${id}`, {
+            method: 'DELETE',
+            headers : {
+                Authorization: 'Bearer ' + this.token,
+            }}).
+        then(res => res.json())
+        return data
+    }
+
+    static async patchOne(newData) {
+        const data = fetch(`${this.endpoint}/my/product/${id}`, {
+            method: 'PATCH',
+            body:JSON.stringify(newData),
+            headers : {
+                Authorization: 'Bearer ' + this.token,
+                "Content-Type": "application/json"
             }}).
         then(res => res.json())
         return data
