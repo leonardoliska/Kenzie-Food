@@ -4,7 +4,9 @@ import { Api } from "../modules/Api.js"
 
 const productsList = await Api.getAll()
 
-const shopcart = new ShopCart()
+const localStorageList = localStorage.getItem('cartList')
+
+const shopcart = new ShopCart(localStorageList)
 shopcart.updateCart()
 
 const showcase = new ShowCase(productsList)
@@ -19,6 +21,7 @@ showcaseHtml.addEventListener("click", (evt) => {
         const product = showcase.getProduct(idProduct)
         shopcart.list.push(product)
         shopcart.updateCart()
+        localStorage.setItem('cartList', JSON.stringify(shopcart.list))
     }
 })
 

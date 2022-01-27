@@ -1,8 +1,8 @@
 export { ShopCart }
 
 class ShopCart {
-    constructor() {
-        this.list           = []
+    constructor(localStorageList) {
+        this.list           = JSON.parse(localStorageList) || []
         this.cartHtml       = document.querySelector('.shopcart-cards-box')
         this.quantityHtml   = document.querySelector('.shopcart__quantity-number')
         this.totalHtml      = document.querySelector('.shopcart__total-number')
